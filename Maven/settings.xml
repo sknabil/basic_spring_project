@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" 
+	  encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+	<localRepository>
+		C:\java\tools\maven\repo
+	</localRepository>
+
+	<pluginGroups>
+	</pluginGroups>
+
+	<proxies>
+	</proxies>
+
+	<servers>
+	</servers>
+
+	<mirrors>
+	</mirrors>
+  
+	<profiles>
+        <profile>
+            <id>general</id>
+            <repositories>
+                <repository>
+                    <id>codehaus-nexus</id>
+                    <url>https://nexus.codehaus.org/content/repositories/releases</url>
+                </repository>
+                <repository>
+                    <id>central</id>
+                    <url>http://repo1.maven.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>maven2-repository.java.net</id>
+                    <url>http://download.java.net/maven/2/</url>
+                </repository>
+                <repository>
+                    <id>ibiblio.mirrors</id>
+                    <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
+                </repository>
+                <repository>
+                    <id>grahamcox-M2</id>
+                    <url>http://grahamcox.co.uk/maven2</url>
+                </repository>
+                <repository>
+                    <id>apache-snapshots</id>
+                    <url>http://repository.apache.org/snapshots</url>
+                </repository>
+                <repository>
+                    <id>codehaus-snapshots</id>
+                    <url>http://nexus.codehaus.org/snapshots</url>
+                </repository>
+                <repository>
+                    <id>com.springsource.repository.bundles.release</id>
+                    <url>http://repository.springsource.com/maven/bundles/release</url>
+                </repository>
+                <repository>
+                    <id>com.springsource.repository.bundles.external</id>
+                    <url>http://repository.springsource.com/maven/bundles/external</url>
+                </repository>
+                <repository>
+                    <id>mvnrepository</id>
+                    <url>http://mvnrepository.com/artifact</url>
+                </repository>
+                <repository>
+                    <id>Google-Code</id>
+                    <url>http://google-maven-repository.googlecode.com/svn/repository</url>
+                </repository>
+            </repositories>
+        </profile>
+
+        <profile>
+			<id>jboss-public-repository</id>
+			<repositories>
+				<repository>
+					<id>jboss-public-repository-group</id>
+					<name>JBoss Public Maven Repository Group</name>
+					<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>jboss-public-repository-group</id>
+					<name>JBoss Public Maven Repository Group</name>
+					<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>never</updatePolicy>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>general</activeProfile>
+		<activeProfile>jboss-public-repository</activeProfile>
+	</activeProfiles>
+	
+</settings>
